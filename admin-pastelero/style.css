@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    text-align: center;
+}
+header{
+    padding-right: 2px;
+    padding-left: 2px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(59, 9, 124);
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+    padding: 10px 1px;
+}
+header a img{
+    width: 100%;
+    height: 55px;
+    
+}
+.container-logo h1{
+    font-family: 'Fasthand', cursive;
+    color: blueviolet;
+    font-size: 34px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-right: 9px;
+}
+
+
+.container-user{
+    background-color: bisque;
+    padding: 5px;
+    border-radius: 20px;
+}
+.path-user{
+    fill: cadetblue;
+}
+
+.path-user2{
+    fill: chocolate;
+}
+header ul li a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+header ul li path{
+    fill: white;
+}
+header ul li svg:hover path{
+    fill: chartreuse;
+}
+
+header .menu{
+    display: none;
+}
+/*Diseño del Body
+
+   diseño de la presentation
+*/
+main{
+    display: flex;
+    height: 100vh;
+}
+.Container-nav{
+    background-color: #7d169f;
+}
+.lis-nav{
+    
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+}
+.lis-nav li path{
+     fill: rgba(255, 255, 255, 0.842);;
+}
+.lis-nav li:hover path{
+    cursor: pointer;
+    fill: rgb(23, 2, 77);
+}
+.Inventario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 0 ;
+
+    background-image: url(https://lh5.googleusercontent.com/proxy/YQ65QzAYp7-llSYTfOG7QQYheLtjpGnEtYRRcXN7L682xpgC17G1clrPL5uMRdPILQxGMuMm1sesiTiGbIn4KCmEd66VBzV0ZOPoTDwTNnyr1NGy-lsuE1etNayOwsjj8nHfyLnDYx9OVXKHh4d4DQ=w1200-h630-p-k-no-nu);
+    background-position: center center;
+    background-size: cover;
+}
+.Inventario div h2{
+    margin-bottom: 20px;
+}
+.lista{
+    width: 90vw;
+    height: 70vh;
+    border: 0;
+    background-color: white;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(151, 46, 236);
+    border-radius: 10px;
+}
+/*Style de footer*/
+
+footer{
+    
+    text-align: center;
+   padding: 0;
+   
+    background-color: #000000;
+    font-family: 'Montserrat';
+    
+}
+footer div h6{
+    font-size: 17px;
+    font-family: 'Fuzzy Bubbles';
+    color: #0266ff;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+footer div p{
+    color: aliceblue;
+    font-size: 12px;
+    
+}
+
+footer div p span{
+    color: coral;
+    padding-left: 10px;
+   font-family: ui-sans-serif;
+}
+
+footer div i{
+    margin-left: 10px;
+    list-style: none;
+}
+
+.redes{
+ padding-bottom: 15px;
+}
+
+.redes a{
+    text-decoration: none;
+}
+
+.redes a:hover path{
+    fill: rgb(240, 50, 247);
+    
+}
+
+@media (max-width: 620px){
+   
+   
+      
+      
+   main >h2{
+      font-size: 30px;
+    }
+  }

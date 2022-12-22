@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+body{
+   
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    text-align: center;
+}
+header{
+    
+    padding-right: 2px;
+    padding-left: 2px;
+    background-color: rgb(59, 9, 124);
+}
+
+.container-logo{
+    display: flex;
+    padding: 10px 1px;
+}
+header a img{
+    width: 100%;
+    height: 55px;
+    
+}
+
+
+
+
+/*Diseño del Body
+
+   diseño de la presentation
+*/
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(151, 46, 236);
+    border-radius: 10px;
+}
+
+main{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1533157950006-c38844053d55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80');
+    background-position: center center;
+   
+}
+main h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: rgb(34, 34, 128);
+    
+}
+main form{
+    width: 500px;
+    height: auto;
+    background-color: #6150eb;
+    padding: 32px;
+    border-radius: 15px;
+    box-shadow:#00000038 1px 0 20px 7px;
+    
+}
+form h5{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+form div {
+    margin-top: 15px;
+}
+form div span{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.sabor-select{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+.adorno-select{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  
+}
+select{
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+.presio  p span{
+    margin-left: 14px;
+    color: white;
+}
+.registro{
+    display: flex;
+    flex-direction: column;
+}
+
+.registro input{
+    font-size: 18px;
+    margin-bottom: 10px;
+   border-radius: 10px;
+   padding: 5px;
+}
+.registro textarea{
+    height: 200px;
+    border-radius: 12px;
+    padding: 6px;
+}
+
+.bt-submid{
+    margin-top: 15px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family:'Montserrat', sans-serif ;
+    padding: 10px;
+    background-color: #e724bd;
+    color: white;
+}
+/*@media style*/
+@media (max-width: 620px){
+    header ul li{
+      display: none;
+    }
+    header .lista{
+        margin: 10px 3% 10px 10px;
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+    color: white;
+      }
+      header .lista:hover{
+          cursor: pointer;
+      }
+      
+   main form{
+      width: 350px;
+    }
+  }
+  
+
+/*Style de footer*/
+
+footer{
+    text-align: center;
+   padding: 0;
+    
+    background-color: #000000;
+    font-family: 'Montserrat';
+    
+}
+footer div h6{
+    font-size: 17px;
+    font-family: 'Fuzzy Bubbles';
+    color: #0266ff;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+footer div p{
+    font-size: 12px;
+    color: white;
+}
+
+footer div p span{
+    padding-left: 10px;
+   font-family: ui-sans-serif;
+}
+
+footer div i{
+    margin-left: 10px;
+    margin-top: 20px;
+    
+}
+
+.redes{
+ margin-top: 10px;
+ padding-bottom: 15px;
+}
+.redes a:hover path{
+    fill: rgb(240, 50, 247);
+    
+}
+

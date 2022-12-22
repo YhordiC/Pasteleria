@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(151, 46, 236);
+    border-radius: 10px;
+}
+
+main{
+    text-align: center;
+}
+header{
+    padding-right: 2px;
+    padding-left: 2px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(59, 9, 124);
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+    padding: 10px 1px;
+}
+header a img{
+    width: 100%;
+    height: 55px;
+    
+}
+.container-logo h1{
+    font-family: 'Fasthand', cursive;
+    color: blueviolet;
+    font-size: 34px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-right: 9px;
+}
+
+header ul li a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: azure;
+}
+header .menu{
+    display: none;
+}
+/*Diseño del Body
+
+   diseño de la presentation
+*/
+.Presentacion{
+    width: 100%;
+    height: 90.7vh;
+    background-image: url('img-Pasteles/pastelero-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 12px 19px 0px #0000004a;
+    margin-bottom: 88px;
+}
+.Presentacion div{
+    width: 500px;
+    padding: 10px;
+}
+.Presentacion div h2{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Presentacion div p{
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: rgb(8, 8, 124);
+    background-color:#25b1bfe6;
+    padding-left: 5px;
+}
+
+.Presentacion div a{
+    text-decoration: none;
+    border: 0;
+    border-radius: 10px;
+    padding: 9px;
+    height: 44px;
+    font-size: 22px;
+    font-family: monospace;
+    -webkit-text-stroke-width: medium;
+    color: #0266ff;
+    background-color:#e7c4e6;
+
+}
+.Presentacion div a:hover{
+    background-color: rgb(86, 0, 185);
+    color: aliceblue;
+}
+
+
+
+/* Diseño de los cuadros de recomendaciones */
+
+main >h2{
+    text-align: center;
+    font-size: 38px;
+    border-bottom: solid 2px #df1aff;
+    padding:0 12px 11px 10px;
+    margin: 0 70px 100px 70px;
+    font-family: 'Montserrat';
+    text-align: center;
+    color: #0266ff;
+}
+
+.container-recomendaciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contenedor{
+    width: 550px;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: #00000052 0px 2px 20px 1px;
+    margin-bottom: 30px;
+    
+}
+
+.contenedor .item{
+    margin: 21px 18px 21px 21px;
+}
+
+.contenedor .bt-hover{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -525px;
+    left: 1px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    justify-content: center;
+    border-radius: 10px;
+    transition: opacity 0.1s ease-in-out ;
+}
+
+.contenedor .bt-hover a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 22px;
+    background-color: #df1aff;
+    color: white;
+    position: absolute;
+
+}
+
+.contenedor:hover .bt-hover{
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+.contenedor:hover .bt-hover a{
+   
+    animation-timing-function: ease-in-out;
+}
+
+.contenedor .bt-hover a:hover{
+    font-size: 23px;
+}
+.torta1{
+ background-image: url(img-Pasteles/apstel1.jpg);
+}
+.torta2{
+    background-image: url(img-Pasteles/pastel2.jpg);
+}
+.torta3{
+    background-image: url(img-Pasteles/pastel3.jpg);
+}
+.torta4{
+    background-image: url(img-Pasteles/pastel4.jpg);
+}
+.torta5{
+    background-image: url(img-Pasteles/pastel5.jpg);
+}
+.torta6{
+    background-image: url(img-Pasteles/pastel6.jpg);
+}
+.imagen{
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    
+
+}
+.datos-pastel{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+.imagen{
+    z-index: 1;
+    height: 400px;
+}
+
+.contenedor:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.boton-vamos-horneear{
+    margin-top: 30px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(202, 139, 21);
+   text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Fuzzy Bubbles';
+    
+}
+.boton-vamos-horneear:hover{
+    background-color: rgb(199, 85, 4);
+   
+}
+
+/*Style de footer*/
+
+footer{
+    
+    text-align: center;
+   padding: 0;
+    margin-top: 100px;
+    background-color: #000000;
+    font-family: 'Montserrat';
+    
+}
+footer div h6{
+    font-size: 17px;
+    font-family: 'Fuzzy Bubbles';
+    color: #0266ff;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+footer div p{
+    color: aliceblue;
+    font-size: 12px;
+    
+}
+
+footer div p span{
+    color: coral;
+    padding-left: 10px;
+   font-family: ui-sans-serif;
+}
+
+footer div i{
+    margin-left: 10px;
+    list-style: none;
+}
+
+.redes{
+ padding-bottom: 15px;
+}
+
+.redes a{
+    text-decoration: none;
+}
+
+.redes a:hover path{
+    fill: rgb(240, 50, 247);
+    
+}
+
+@media (max-width: 620px){
+    header ul li{
+      display: none;
+    }
+    header .lista{
+        margin: 10px 3% 10px 10px;
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+    color: white;
+      }
+      header .lista:hover{
+          cursor: pointer;
+      }
+      
+   main >h2{
+      font-size: 30px;
+    }
+  }
