@@ -21,15 +21,24 @@
             <img src="imagen-logo/logo.png" alt="Logo de pagina web">
             
         </a>
-        <span class="material-symbols-outlined menu close" id="close" >close</span>
-        <ul>
-            <li><a href="#Quesomos">Quienes somos?</a></li>
-            <li><a href="#contactos">Contactos</a></li>
+        <ul class="nav-lista">
+            <li><a href="#Quesomos" onclick={Cerrar()}>Quienes somos?</a></li>
+            <li><a href="#contactos" onclick={Cerrar()}>Contactos</a></li>
             <li><a href="admin-pastelero/index.html">Iniciar Sesion</a></li>        
         </ul>
-        <span class="material-symbols-outlined menu lista">
-            menu
-            </span>
+        <span id="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="40" height="40">
+                <g style="fill: #ffa2cf;">
+                    <path d="M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z"/>
+                    <path d="M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z"/>
+                    <path d="M480,373.333H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,373.333,480,373.333z"/>
+                </g>
+                </svg>
+        </span>
+
+        <span id="close">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode" viewBox="0 0 24 24" width="40" height="40"><polygon style="fill: #ffa2cf;" points="24.061 2.061 21.939 -0.061 12 9.879 2.061 -0.061 -0.061 2.061 9.879 12 -0.061 21.939 2.061 24.061 12 14.121 21.939 24.061 24.061 21.939 14.121 12 24.061 2.061"/></svg>
+        </span>
     </header>
     <!---Estructura del cuerpo-->
     <main>
