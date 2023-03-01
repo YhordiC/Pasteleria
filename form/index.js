@@ -3,7 +3,8 @@ const input= document.querySelectorAll('.input');
 
 sub_boton.addEventListener('click',()=>{
     
-    location.href='anuncio/anuncio.html';}
-
-    )
+    location.href='anuncio/anuncio.html';
+    
+    
+})
 
